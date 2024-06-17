@@ -3,57 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Видеоигры Маркетплейс</title>
 </head>
 <body>
     <header>
-        <div class="top-bar">
-            <h1>Видеоигры Маркетплейс</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Игры</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Профиль</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Видеоигры Маркетплейс</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Главная <span class="sr-only">(текущая)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Игры</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Профиль</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+                        <button class="btn btn-purple my-2 my-sm-0" type="submit">Найти</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
     
-    <main>
-        <section class="catalog">
-            <div class="product-item">
-                <img src="img1.jpg" alt="Dead Cells">
-                <h3>Dead Cells</h3>
-                <p>Цена: 600 руб.</p>
-                <button>Добавить в корзину</button>
-            </div>
-            <div class="product-item">
-                <img src="img2.jpeg" alt="DARK SOULS III">
-                <h3>DARK SOULS III</h3>
-                <p>Цена: 2915 руб.</p>
-                <button>Добавить в корзину</button>
-            </div>
-        </section>
+        <main class="container mt-5">
+            <div class="row">
+                <div class="col-4"></div>
+                    <aside class="filters">
+                        <h2>Фильтры</h2>
+                        <div class="filter-item">
+                            <label><input type="checkbox"> Новинки</label>
+                        </div>
+                        <div class="filter-item">
+                            <label><input type="checkbox"> Предзаказы</label>
+                        </div>
+                        <div class="filter-item">
+                            <label><input type="checkbox"> Со скидкой</label>
+                        </div>
+                        <div class="filter-item">
+                            <label><input type="checkbox"> Недоступные в РФ</label>
+                        </div>
+                    </aside>
+                </div>
 
-        <aside class="filters">
-            <h2>Фильтры</h2>
-            <div class="filter-item">
-                <label><input type="checkbox"> Новинки</label>
+                <div class="col-8">
+                    <section class="catalog">
+                        <div class="product-item">
+                            <img src="img1.jpg" alt="Dead Cells">
+                            <h3>Dead Cells</h3>
+                            <p>Цена: 600 руб.</p>
+                            <button class="btn btn-purple">Добавить в корзину</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="img2.jpeg" alt="DARK SOULS III">
+                            <h3>DARK SOULS III</h3>
+                            <p>Цена: 2915 руб.</p>
+                            <button class="btn btn-purple">Добавить в корзину</button>
+                        </div>
+                    </section>
+                </div>    
             </div>
-            <div class="filter-item">
-                <label><input type="checkbox"> Предзаказы</label>
-            </div>
-            <div class="filter-item">
-                <label><input type="checkbox"> Недоступные в РФ</label>
-            </div>
-            <div class="filter-item">
-                <label><input type="checkbox"> Со скидкой</label>
-            </div>
-        </aside>
-    </main>
+        </main>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

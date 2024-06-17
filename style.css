@@ -9,31 +9,8 @@ header {
     color: #fff;
 }
 
-.top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
 h1 {
     margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
 }
 
 main {
@@ -43,6 +20,7 @@ main {
 .catalog {
     flex: 3;
     padding: 20px;
+    box-sizing: content-box;
 }
 
 .filters {
@@ -50,8 +28,10 @@ main {
     padding: 20px;
     background-color: #f2f2f2;
     border-radius: 5px;
-    max-height: 200px;
+    max-height: 190px;
+    max-width: 220px;
     overflow-y: auto;
+    box-sizing: content-box;
 }
 
 .filters h2 {
@@ -78,10 +58,37 @@ main {
     border-radius: 10px; 
     padding: 20px; 
     margin-bottom: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.product-item h3 {
+    margin-top: 10px; /* Отступ сверху для заголовка */
+    margin-bottom: 10px; /* Отступ снизу для заголовка */
+}
+
+.product-item p {
+    margin-bottom: 10px; /* Отступ снизу для абзаца */
 }
 
 .product-item img {
     width: 320px; 
     height: 180px; 
     object-fit: cover;
+}
+
+.btn-purple {
+        color: #fff;
+        background-color: #800080;
+        border-color: #800080;
+    }
+
+.btn-purple:hover {
+        color: #fff;
+        background-color: #6a006a;
+        border-color: #6a006a;
+    }
+
+.row {
+    flex: 1;
 }

@@ -57,12 +57,12 @@ caption {
 }
 
 .product-item h3 {
-    margin-top: 10px; /* Отступ сверху для заголовка */
-    margin-bottom: 10px; /* Отступ снизу для заголовка */
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .product-item p {
-    margin-bottom: 10px; /* Отступ снизу для абзаца */
+    margin-bottom: 10px;
 }
 
 .product-item img {
@@ -85,4 +85,12 @@ caption {
 
 .row {
     flex: 1;
+}
+
+.card-price {
+    margin-top: 15px;
+    font-weight: bold; 
+}
+.card-button {
+    margin-top: 10px; 
 }

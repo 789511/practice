@@ -49,38 +49,48 @@
         <div class="container mt-2">
             <div class="row">
                 <div class="col-12 col-md-4 ps-2 mt-4">
-                    <div class="card p-3 bg-light border">
+                    <div class="card p-3 shadow-sm">
                         <h2>Фильтры</h2>
-                        <div class="filter-item my-2">
-                            <label><input type="checkbox"> Новинки</label>
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="" id="New"> 
+                            <label class="form-check-label" for="New"> Новинки</label>
                         </div>
-                        <div class="filter-item my-2">
-                            <label><input type="checkbox"> Предзаказы</label>
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="" id="Preorder"> 
+                            <label class="form-check-label" for="Preorder"> Предзаказы</label>
                         </div>
-                        <div class="filter-item my-2">
-                            <label><input type="checkbox"> Со скидкой</label>
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="" id="LowerPrice"> 
+                            <label class="form-check-label" for="LowerPrice"> Со скидкой</label>
                         </div>
-                        <div class="filter-item my-2">
-                            <label><input type="checkbox"> Недоступные в РФ</label>
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="" id="UnavaibleRussia"> 
+                            <label class="form-check-label" for="UnavaibleRussia"> Недоступные в РФ</label>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-8">
                     <section class="catalog">
-                        <div class="product-item">
+                        <div class="card shadow mt-2">
                             <img src="img1.jpg" alt="Dead Cells">
-                            <h3>Dead Cells</h3>
-                            <div class="caption">Dead Cells — это экшен-платформер и метроидвания с элементами рогалика. Вас ждет огромный, постоянно меняющийся замок... Если, конечно, вы сможете победить его стражей. Никаких сохранений. Убивайте, умирайте, учитесь и пробуйте снова.</div>
-                            <h4>Цена: 600 руб.</h4>
-                            <button class="btn btn-purple">Добавить в корзину</button>
+                            <div class="card-body">
+                                <h3 class="card-title">Dead Cells</h3>
+                                <div class="card-text">Dead Cells — это экшен-платформер и метроидвания с элементами рогалика. Вас ждет огромный, постоянно меняющийся замок... Если, конечно, вы сможете победить его стражей. Никаких сохранений. Убивайте, умирайте, учитесь и пробуйте снова.</div>
+                                <hr>
+                                <h4 class="card-price">Цена: 600 руб.</h4>
+                                <button class="btn btn-purple">Добавить в корзину</button>
+                            </div>
                         </div>
-                        <div class="product-item">
+                        <div class="card shadow mt-2">
                             <img src="img2.jpeg" alt="DARK SOULS III">
-                            <h3>DARK SOULS III</h3>
-                            <caption>Загадочный и темный мир фентези, который таит в себе множество тайн и загадок. Классический Souls-геймплей. Все в духе первых двух игр серии. Геймплей в DS3 стал достойным наследником серии и до сих пор приводится в пример современным проектам.</caption>
-                            <h4>Цена: 2915 руб.</h4>
-                            <button class="btn btn-purple">Добавить в корзину</button>
+                            <div class="card-body">
+                                <h3 class="card-title">DARK SOULS III</h3>
+                                <div class="card-text">Загадочный и темный мир фентези, который таит в себе множество тайн и загадок. Классический Souls-геймплей. Все в духе первых двух игр серии. Геймплей в DS3 стал достойным наследником серии и до сих пор приводится в пример современным проектам.</div>
+                                <hr>
+                                <h4 class="card-price">Цена: 2915 руб.</h4>
+                                <button class="btn btn-purple">Добавить в корзину</button>
+                            </div>
                         </div>
                     </section>
                 </div>    

@@ -17,22 +17,15 @@ main {
     display: flex;
 }
 
+caption {
+    color: #f2f2f2;
+    font: italic normal normal 16px/1.5 Arial, sans-serif;
+}
+
 .catalog {
     flex: 3;
     padding: 20px;
     box-sizing: content-box;
-}
-
-.filters {
-    flex: 1;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    max-height: 190px;
-    max-width: 220px;
-    overflow-y: auto;
-    box-sizing: content-box;
-    margin: 20px;
 }
 
 .filters h2 {

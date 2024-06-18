@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Видеоигры Маркетплейс</title>
 </head>
@@ -13,7 +13,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="#">Видеоигры Маркетплейс</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -21,7 +21,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Главная <span class="sr-only">(текущая)</span></a>
+                            <a class="nav-link" href="#">Главная</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Игры</a>
@@ -36,33 +36,34 @@
                             <a class="nav-link" href="#">Профиль</a>
                         </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
-                        <button class="btn btn-purple my-2 my-sm-0" type="submit">Найти</button>
+                    <form class="d-flex my-2 my-lg-0">
+                        <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                        <button class="btn btn-purple" type="submit">Найти</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
     
-        <main>
+    <main>
+        <div class="container mt-2">
             <div class="row">
-                <div class="col-12 col-md-4">
-                    <aside class="filters">
+                <div class="col-12 col-md-4 ps-2 mt-4">
+                    <div class="card p-3 bg-light border">
                         <h2>Фильтры</h2>
-                        <div class="filter-item">
+                        <div class="filter-item my-2">
                             <label><input type="checkbox"> Новинки</label>
                         </div>
-                        <div class="filter-item">
+                        <div class="filter-item my-2">
                             <label><input type="checkbox"> Предзаказы</label>
                         </div>
-                        <div class="filter-item">
+                        <div class="filter-item my-2">
                             <label><input type="checkbox"> Со скидкой</label>
                         </div>
-                        <div class="filter-item">
+                        <div class="filter-item my-2">
                             <label><input type="checkbox"> Недоступные в РФ</label>
                         </div>
-                    </aside>
+                    </div>
                 </div>
 
                 <div class="col-12 col-md-8">
@@ -70,19 +71,22 @@
                         <div class="product-item">
                             <img src="img1.jpg" alt="Dead Cells">
                             <h3>Dead Cells</h3>
-                            <p>Цена: 600 руб.</p>
+                            <div class="caption">Dead Cells — это экшен-платформер и метроидвания с элементами рогалика. Вас ждет огромный, постоянно меняющийся замок... Если, конечно, вы сможете победить его стражей. Никаких сохранений. Убивайте, умирайте, учитесь и пробуйте снова.</div>
+                            <h4>Цена: 600 руб.</h4>
                             <button class="btn btn-purple">Добавить в корзину</button>
                         </div>
                         <div class="product-item">
                             <img src="img2.jpeg" alt="DARK SOULS III">
                             <h3>DARK SOULS III</h3>
-                            <p>Цена: 2915 руб.</p>
+                            <caption>Загадочный и темный мир фентези, который таит в себе множество тайн и загадок. Классический Souls-геймплей. Все в духе первых двух игр серии. Геймплей в DS3 стал достойным наследником серии и до сих пор приводится в пример современным проектам.</caption>
+                            <h4>Цена: 2915 руб.</h4>
                             <button class="btn btn-purple">Добавить в корзину</button>
                         </div>
                     </section>
                 </div>    
             </div>
-        </main>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

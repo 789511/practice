@@ -2,7 +2,6 @@ def massiveSorting
   puts "Введите имена (для завершения ввода введите 'end'): "
   input = gets.chomp
   names = []
-  #test
 
   while input.downcase != 'end' do
     names << input

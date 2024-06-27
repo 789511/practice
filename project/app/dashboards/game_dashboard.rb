@@ -11,7 +11,7 @@ class GameDashboard < Administrate::BaseDashboard
     id: Field::Number,
     category: Field::String,
     description: Field::Text,
-    image: Field::String,
+    image: Field::ActiveStorage,
     price: Field::String.with_options(searchable: false),
     title: Field::String,
     created_at: Field::DateTime,

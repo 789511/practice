@@ -1,0 +1,63 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    flex-direction: column;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+h1 {
+    color: orangered;
+}
+
+h5 {
+    color: orangered;
+}
+
+a {
+    color: orangered;
+}
+
+.content {
+    flex: 1;
+}
+
+.card {
+    display: flex;
+}
+
+.card-title {
+    color: orangered;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.text-orange {
+    color: orangered;
+}
+
+.text-yellow {
+    color: yellow;
+}
+
+.text-overlay {
+    top: 43%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+.font-s {
+    font-size: smaller;
+}
+
+@media (max-width: 767.98px) {
+    .image-container {
+        display: none !important;
+    }
+  }

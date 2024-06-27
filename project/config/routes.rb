@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  namespace :admin do
+      resources :games
+
+      root to: "games#index"
+    end
   resources :games
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

@@ -1,14 +1,43 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Games</h1>
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-12 col-md-4 ps-2 mt-4">
+      <div class="card p-3 shadow-sm">
+        <h2>Фильтры</h2>
+        <div class="form-check my-2">
+          <input class="form-check-input" type="checkbox" value="" id="New"> 
+          <label class="form-check-label" for="New"> Новинки</label>
+        </div>
+        <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" value="" id="Preorder"> 
+            <label class="form-check-label" for="Preorder"> Предзаказы</label>
+        </div>
+        <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" value="" id="LowerPrice"> 
+            <label class="form-check-label" for="LowerPrice"> Со скидкой</label>
+        </div>
+        <div class="form-check my-2">
+          <input class="form-check-input" type="checkbox" value="" id="UnavaibleRussia"> 
+          <label class="form-check-label" for="UnavaibleRussia"> Недоступные в РФ</label>
+        </div>
+      </div>
+  </div>
 
-<div id="games">
-  <% @games.each do |game| %>
-    <%= render game %>
-    <p>
-      <%= link_to "Show this game", game %>
-    </p>
-  <% end %>
+<div class="col-12 col-md-8">
+  <section class="catalog">
+    <% @games.each do |game| %>
+      <div class="col-md-12 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title"><%= game.title %></h5>
+            <p class="card-text"><%= simple_format(game.description).html_safe %></p>
+            <hr>
+            <h4 class="card-price">Цена: <%= game.price%> руб.</h4>
+            <button class="btn btn-purple">Добавить в корзину</button>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </section>
 </div>
-
-<%= link_to "New game", new_game_path %>

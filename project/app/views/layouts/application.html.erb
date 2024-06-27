@@ -35,9 +35,18 @@
                         <li class="nav-item">
                             <%= link_to 'Контакты', contact_path, class: "nav-link #{'active' if current_page?(contact_path)}" %>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Профиль</a>
-                        </li>
+                        <% if user_signed_in? %>
+                          <li class="nav-item">
+                            <%= link_to 'Профиль', profile_path, class: 'nav-link' %>
+                          </li>
+                          <li class="nav-item">
+                            <%= link_to 'Выход', destroy_user_session_path, data: { "turbo-method": :delete }, class: 'nav-link' %>
+                          </li>
+                        <% else %>
+                          <li class="nav-item">
+                            <%= link_to 'Вход', new_user_session_path, class: 'nav-link' %>
+                          </li>
+                        <% end %>
                     </ul>
                     <form class="d-flex my-2 my-lg-0 ms-3">
                         <input class="form-control me-2" type="search" placeholder="" aria-label="Search">

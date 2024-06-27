@@ -28,9 +28,9 @@
   <section class="catalog">
     <% @games.each do |game| %>
       <div class="col-md-12 mb-4">
-        <div class="card h-100">
+        <div class="card shadow h-100">
           <% if game.image.present?%>
-          <%= image_tag game.image, class: 'card-img-top', alt: game.title %>
+            <%= image_tag game.image, class: 'card-img-top', alt: game.title %>
           <% end %>
           <div class="card-body">
             <h5 class="card-title"><%= game.title %></h5>
